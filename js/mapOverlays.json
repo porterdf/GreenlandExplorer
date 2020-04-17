@@ -1,0 +1,122 @@
+var mapOverlays =
+[
+   {
+      "name":"Explore the Greenland Coastline",
+      "type":"overview",
+      // "info":"data/info_pages/html/OverviewTopics.html",
+   },
+   {
+      "name":"WHY do we study Greenland Coasts?",
+      "type":"dir",
+      "children":[
+         {
+            "name":"Greenland contribution to sea level rise",
+            "type":"overview",
+            // "info":"data/info_pages/html/OverviewWhyDoesSeaLevelChange.html",
+         },
+         {
+            "name":"How is Greenland changing?",
+            "type":"dir",
+            "children":[
+               {
+                  "name":"Greenland change",
+                  "type":"overview",
+                  // "info":"data/info_pages/html/OverviewIceSheetContributions.html",
+               },
+            ]
+         },
+         {
+            "name":"Why is Greenland vulnerable?",
+            "type":"dir",
+            "children":[
+               {
+                  "name":"Greenland Vulnerability",
+                  "type":"overview",
+                  // "info":"data/info_pages/html/OverviewIceSheetContributions.html",
+               },
+               {
+                  "name":"Speed of ice flow",
+                  "title":"Greenland Ice Sheet Velocity",
+                  "legendUnits":"m/year",
+                  "type":"xb_map",
+                  "mapProjection":1,
+                  "source":"http://app.earth-observer.org/data/basemaps/images/arctic/Greenland/GreenlandIceFlowVelocityNASA_320",
+                  "info":"data/info_pages/html/GreenlandIceVelocity.html",
+                  "imageType":".png",
+                  "numLevels":4,
+                  "credit":"Rignot/Wolovick",
+                  "legend":true,
+                  "legendPath":"http://app.earth-observer.org/data/basemaps/images/arctic/Greenland/GreenlandIceFlowVelocityNASA_320/GreenlandIceSheetVelocityLegend.png",
+                  "scale":true,
+                  "scalePath":"http://app.earth-observer.org/data/basemaps/images/arctic/Greenland/GreenlandIceFlowVelocityNASA_320/GreenlandIceVelocity_320.scl",
+                  "aboutAlertURL":"data/AntarcticIceVelocity/About_GreenlandIceVelocity.txt",
+                  "aboutAudioURL":"http://app.earth-observer.org/data/audio/Audio_GreenlandIceVelocity.m4a",
+               },
+            ]
+         },
+         {
+            "name":"How does Greenland affect sea level?",
+            "type":"dir",
+            "children":[
+               {
+                  "name":"Greenland Sea Level Contributions",
+                  "type":"overview",
+                  // "info":"data/info_pages/html/OverviewIceSheetContributions.html",
+               },
+               {
+                   "name":"Fingerprints from melting ice sheets",
+                   "title":"Fingerprints from Melting Ice Sheets",
+                   "showSeabedNames":false,
+                   "showElevation":false,
+                   "type":"overlay_sequence",
+                   "overlayType":"tile_512",
+                   "sequenceSource":"http://app.earth-observer.org/data/basemaps/images/global/IceSheetFingerprints_512/IceSheetFootprintsList2.txt",
+                   "info":"data/info_pages/html/IceSheetFingerprinting.html",
+                   "legend":true,
+                   "legendPath":"http://app.earth-observer.org/data/basemaps/images/global/IceSheetFingerprints_512/FootprintsLegend.png",
+                   "scale":true,
+                   "scalePath":"http://app.earth-observer.org/data/basemaps/images/global/IceSheetFingerprints_512/FootprintsLegend.scl",
+                   "hideOpacitySlider":true,
+                   "hideScaleBar":true,
+                   "imageType":".png",
+                   "numLevels":2,
+                   "tileDelta":180,
+                   "tileSize":512,
+                   "wesn":"-180,180,-90,90",
+                   "credit":"Carling Hay, Jerry Mitrovica",
+                   "aboutAlertURL":"data/IceSheetFingerprinting/About_IceSheetFingerprinting.txt",
+                   "aboutAudioURL":"http://app.earth-observer.org/data/audio/Audio_IceSheetFingerprinting.m4a"
+               }
+            ]
+         }
+      ]
+    },
+    {
+      "name":"HOW are we studying the Greenland Coastline?",
+      "type":"dir",
+      "children":[
+         {
+            "name":"How are we studying the Greenland Coastline?",
+            "type":"overview",
+            // "info":"data/info_pages/html/OverviewWhatAboutPolarRegions.html",
+         },
+         {
+             "name":"Greenland Rising Sites",
+             "title":"Greenland Rising Sites",
+             "type":"geojson",
+             "mapProjection":1,
+             "source":"data/GR_sites/GR_sites_multipoint.geojson",
+             "styleFunctionFile":"data/GR_sites/GR_sites_style.js",
+             "styleFunction":"styleFunctionProjects",
+             "info":"",
+             "credit":"TBD",
+             "legend":true,
+             "legendPath":"data/GR_sites/GR_sites_legend.png",
+             "scale":false,
+             "scalePath":"",
+             "aboutAlertURL":"data/GR_sites/About_GR_sites.txt",
+             "aboutAudioURL":"TBD"
+         }
+      ]
+   }
+]
