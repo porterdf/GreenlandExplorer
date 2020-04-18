@@ -19,7 +19,7 @@
         position: {  // observation point
           x: -60,
           y: 31,
-          z: 25000000 // altitude in meters
+          z: 2500000 // altitude in meters
         },
         tilt: 0  // perspective in degrees
       }
@@ -27,7 +27,7 @@
 
 
     // Set the sun position to fully illuminate antarctica
-    view.environment.lighting.date = new Date("December 21, 2019, 12:00");
+    view.environment.lighting.date = new Date("June 21, 2019, 12:00");
 
 
     var greenland = {
@@ -39,12 +39,12 @@
     var greenlandText = {
       type: "point",
       longitude: -50,
-      latitude: -65
+      latitude: 65
     };
 
     var simpleMarkerSymbol = {
       type: "simple-marker",
-      color: [0, 77, 168], 
+      color: [77, 77, 168], 
       outline: {
           color: [255, 255, 255], // white
           width: 1
@@ -62,7 +62,7 @@
         text: "Greenland",  
         font: { size: 25, weight: "bold", family: "arial" },
         verticalAlignment: "bottom",
-        color: [0, 77, 168, 1],
+        color: [77, 77, 168, 1],
       };
 
       var textGraphic = new Graphic({
@@ -80,10 +80,10 @@
       view.goTo({
         center: [-45,70],
         zoom:4,
-        heading:106
+        heading:0
       }, {
         animate: true,
-        speedFactor:0.1
+        speedFactor:0.2
       });
 
 

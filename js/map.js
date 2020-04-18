@@ -170,7 +170,7 @@ $(document).ready(function() {
     "sp": {"url_ext": "wms_SP?", "projection": sp_proj, "layer": "GMRT_SP", "zoom": 4.7, "view_extent": sp_view_extent, 
            "center": thwaitesCoords, "overview_center": sp_center},
     "np": {"url_ext": "wms_NP?", "projection": np_proj, "layer": "GMRT_NP", "zoom": 2, "view_extent": np_view_extent,
-          "center": greenlandCoords, "overview_center": np_center
+          "center": greenlandCoords, "overview_center": np_center}
   };
 
   //initialize the main map in Mercator projection
